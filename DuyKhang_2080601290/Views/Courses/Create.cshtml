@@ -1,0 +1,37 @@
+﻿@model DuyKhang_2080601290.ViewModels.CourseViewModel
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create</h2>
+
+<from>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Place)
+        @Html.TextBoxFor(m => m.Place, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Date)
+        @Html.TextBoxFor(m => m.Date, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Time)
+        @Html.TextBoxFor(m => m.Time, new { @class = "form-control" })
+        <label>
+            <imput class="form-control">
+            </imput>
+        </label>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Category)
+        @Html.DropDownListFor(m => m.Category,
+       new SelectList(Model.Categories, "Name"), "", new { @class = "form-control" })
+    </div>
+    <button type="submit" value="Save" class="btn btn-primary">Save</button>
+    <div class="form-group"></div>
+    <div class="form-group"></div>
+    <div class="form-group"></div>
+    <div class="form-group"></div>
+</from>
