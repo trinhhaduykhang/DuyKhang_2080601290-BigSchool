@@ -9,7 +9,7 @@
         {
             Sql("INSERT INTO CATEGORIES ( NAME) VALUES ( 'Development')");
             Sql("INSERT INTO CATEGORIES ( NAME) VALUES ( 'Business')");
-            Sql("INSERT INTO CATEGORIES ( NAME) VALUES ( 'Marketing')");
+            Sql("INSERT INTO CATEGORIES ( NAME) VALUES (  'Marketing')");
         }
         
         public override void Down()

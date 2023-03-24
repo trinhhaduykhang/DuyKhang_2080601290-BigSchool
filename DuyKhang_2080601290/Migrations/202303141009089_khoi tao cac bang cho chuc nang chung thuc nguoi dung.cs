@@ -6,7 +6,7 @@
     public partial class khoitaocacbangchochucnangchungthucnguoidung : DbMigration
     {
         public override void Up()
-        {
+        { 
             CreateTable(
                 "dbo.AspNetRoles",
                 c => new
